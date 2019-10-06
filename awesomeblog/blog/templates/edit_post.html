@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+   Edit Post
+
+{% endblock %}
+
+{% block detail %}
+    <div class="new_post">
+        <h1>Edit Post</h1>
+        <form method="POST">
+            {{ csrf_token }}
+            {{ form.as_p }}
+            <div><button>Update</button></div>
+        </form>
+
+    </div>
+
+{% endblock %}
+
